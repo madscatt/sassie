@@ -1,0 +1,55 @@
+Agenda.
+Proposals for SANS, SAXS
+APS:
+                                                              i.      Two experiments: SAXS (first) & fast flow fractionation
+                                                            ii.      Cycle June-November (TBC)
+                                                          iii.      SAXS:
+Participants:
+Confirmed: Hassan, Susana, Joseph,
+TBC: from Chris group & Abbvie
+Two experimental set-up: capillaries & flow-through cell (?combined with chromatography column?)
+                                                           iv.      ?Visit to Abbvie Chicago site after the experiment - TBC
+ORNL submitted, waiting for decision
+?April: DIAMOND and ISIS (?check with Robin about applications)
+NIST: late summer/fall 2026 (looks promising, they are restarting)
+May/June plans:
+Experiments with LDH in UD (Hassan)
+                                                              i.      LDH will be shipped from Abbvie to UD (Evgenyi to follow-up with Chris)
+                                                            ii.      SLS & DLS
+To support modeling (e.g., B22)
+to detect tetramer dissociation (e.g., drop pH from 7.5 to 5, add salt)
+freeze-thaw
+                                                          iii.      SEC?
+Computational: Chris and Hassain will be discussing details separately
+Alternative models
+Concanavalin A (25.5 kDa/monomer – dimer at low pH, tetramer at high pH). Available at ThermoFisher, Sigma (eg. L7647); needs CaCl2 and MnCl2 for stability (prevent aggregation). Needs decent amount of salt (100 mM or higher) to stay soluble.
+Aldolase (~160 kDa; tetramer); from my understanding, if we chose a class I aldolase, it does not require co-factors for stability. Class II requires metal cofactors, but may be more stable. Looks like there are suppliers at a reasonable price; https://moleculardepot.com/product/aldolase-lyophilized-2/
+Sorbitol Dehydrogenase (152 kDa; tetramer). Similar to LDH in structure and co-factors. Also a model protein. Looks more reasonable in terms of price/suppliers but we’d need to check if it’s stable, if it needs zinc etc. https://moleculardepot.com/product/sorbitol-dehydrogenase-sdh/
+Glucose isomerase (173 kDa; tetramer). Looks expensive, similar to LDH in prices
+Urate oxidase (4x 33 kDa tetramer). Very interesting in terms of thermal stability but looks expensive, similar to LDH in prices
+_____________________________________
+LDH order:
+(https://www.bio-world.com/recombinant-proteins/lactate-dehydrogenase-recombinant-p-22060528)
+https://www.sigmaaldrich.com/US/en/product/sigma/59747?srsltid=AfmBOooj5MsoQiQoZi2OHtnb3iLPiIN_UfvTnao8C3lPE6MWgyk1mCy1
+https://www.sigmaaldrich.com/US/en/product/mm/427211
+Computational studies of LDH
+                                                                i.      dissociation of tetramer? – per Chris’s comment, I understand that it might be possible
+                                                              ii.      Conformational changes as the results of pH & I changes?
+                                                             iii.      Cold denaturation (both with and without ice present)?
+                                                             iv.      from Joseph:
+AlphaFold2-Multimer
+and AlphaFold3 (AF3) effectively predict protein self-association (homooligomerization) and quaternary structures, with the interface predicted TM-score (ipTM) acting as a reliable indicator of correct assembly. Both tools can distinguish between monomeric and multimeric proteins, with AF3 showing higher accuracy in some cases, although 3-5 recycles are often necessary to confirm stoichiometry
+Key Details on AlphaFold and LDH
+Structure Availability: The AlphaFold Database contains entries for many species (e.g., B. longum, S. aureus, X. laevis).
+Model Quality: LDH structures generally show high confidence (often >90% pLDDT), making them reliable for downstream structural analysis.
+Self-Association: While standard AlphaFold predicts monomers, using AlphaFold-Multimer (often via ColabFold) allows for the prediction of the quaternary structure (e.g., the tetramer) of LDH, note.
+Functional Context: LDHs are key enzymes in metabolizing lactate to pyruvate.
+Application: Researchers can use these models to study how mutations or small molecules, such as fructose 1,6-bisphosphate, affect enzyme assembly. 
+AlphaFold Protein Structure Database
+   
+Objectives
+Develop experimental approaches and computational tools to investigate dissociation/association of complex biologicals in solution to connect to major microenvironmental changes during freeze/thaw and freeze-drying/reconstitution.
+Demonstrate applicability of the tools developed to investigate impact of formulation and process parameters on physical integrity of model complex biologicals:
+Establish impact of freeze-thaw and freeze-drying on conformational stability of proteins with quaternary structure
+Investigate impact of selected excipients (e.g., surfactants) on conformation and association/dissociation of multi-units biologicals (e.g., multi-unit proteins)
+ 
